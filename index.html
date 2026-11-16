@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>東京漫遊 3 日自由行 — LLM Wiki 旅遊知識庫</title>
+  <style>
+    :root {
+      --primary-color: #2b6cb0;
+      --bg-color: #f7fafc;
+      --card-bg: #ffffff;
+      --text-color: #2d3748;
+      --accent-color: #dd6b20;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #3182ce, #805ad5);
+      color: white;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 { margin: 0 0 10px 0; font-size: 2.2rem; }
+    header p { margin: 0; opacity: 0.9; }
+    .section-title {
+      font-size: 1.5rem;
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 8px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #1a202c;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      border: 1px solid #e2e8f0;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+    .card h3 { margin-top: 0; color: var(--primary-color); }
+    .card p { font-size: 0.95rem; color: #4a5568; margin-bottom: 0; }
+    .tag {
+      display: inline-block;
+      background: #edf2f7;
+      color: #4a5568;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      color: #a0aec0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🗼 東京漫遊 3 日自由行</h1>
+      <p>基於 Karpathy LLM Wiki 架構之個人旅遊知識庫網站</p>
+    </header>
+
+    <div class="section-title">🗺️ 推薦行程規劃</div>
+    <div class="grid">
+      <a href="pages/tokyo-relaxed-3-days.html" class="card">
+        <span class="tag">Itinerary</span>
+        <h3>東京 Relaxed 3 日遊 ➔</h3>
+        <p>點擊檢視包含淺草寺、明治神宮、SHIBUYA SKY、teamLab Planets 與晴空塔的完整詳細行程規畫頁面。</p>
+      </a>
+    </div>
+
+    <div class="section-title">📍 經典景點 (Spots)</div>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">景點 / 歷史文化</span>
+        <h3>淺草寺 (Sensoji Temple)</h3>
+        <p>東京都內最古老的寺廟，著名的雷門紅燈籠與仲見世通商店街。</p>
+      </div>
+      <div class="card">
+        <span class="tag">景點 / 神社參拜</span>
+        <h3>明治神宮 (Meiji Jingu)</h3>
+        <p>位於澀谷區的廣闊綠洲，獻給明治天皇與昭憲皇太后的神社。</p>
+      </div>
+      <div class="card">
+        <span class="tag">景點 / 高空觀景</span>
+        <h3>SHIBUYA SKY</h3>
+        <p>澀谷 Scramble Square 頂樓的高空露天展望台，可俯瞰十字路口全景。</p>
+      </div>
+      <div class="card">
+        <span class="tag">景點 / 沉浸式藝術</span>
+        <h3>teamLab Planets</h3>
+        <p>位於豐洲的身臨其境數位藝術展覽，體驗身心融入藝術作品的感受。</p>
+      </div>
+      <div class="card">
+        <span class="tag">景點 / 地標塔樓</span>
+        <h3>東京晴空塔 (Tokyo Skytree)</h3>
+        <p>世界最高塔式建築之一，具備展望台、商場與天象館的大型複合設施。</p>
+      </div>
+    </div>
+
+    <div class="section-title">🍜 美食地圖 (Food)</div>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">美食 / 鰻魚日料</span>
+        <h3>福田家 (Fukudaya)</h3>
+        <p>歷史悠久的老字號鰻魚與傳統日式料理名店。</p>
+      </div>
+      <div class="card">
+        <span class="tag">美食 / 串燒烤肉</span>
+        <h3>伊勢廣 (Isehiro Yakitori)</h3>
+        <p>京橋著名的炭火燒鳥老店，以道地醬汁與新鮮雞肉串燒聞名。</p>
+      </div>
+      <div class="card">
+        <span class="tag">美食 / 蕎麥麵</span>
+        <h3>神田まつや (Kanda Matsuya)</h3>
+        <p>東京傳統手工蕎麥麵代表老店，展現純粹的日式麵食風味。</p>
+      </div>
+      <div class="card">
+        <span class="tag">美食 / 日式咖哩</span>
+        <h3>南海咖哩 (Rice Curry Manten)</h3>
+        <p>神保町深受學生與上班族喜愛的大份量經典日式黑咖哩名店。</p>
+      </div>
+      <div class="card">
+        <span class="tag">美食 / 文字燒</span>
+        <h3>月島文字燒 もへじ (Monja Moheji)</h3>
+        <p>月島文字燒街人氣名店，以高湯底與新鮮海鮮文字燒著稱。</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Tokyo Travel LLM Wiki — Powered by Agentic Architecture</p>
+    </footer>
+  </div>
+</body>
+</html>
